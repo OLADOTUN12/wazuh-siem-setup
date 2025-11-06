@@ -54,14 +54,13 @@ Example:
 
 
 ### 1. Import the Wazuh OVA Appliance  
-> ![Importing Wazuh OVA]<img width="802" height="707" alt="Screenshot 2025-11-06 130252" src="https://github.com/user-attachments/assets/362a4488-369e-46b6-a010-a6b1bfd0b09d" />
+> ![Importing Wazuh OVA](https://github.com/OLADOTUN12/wazuh-siem-setup/blob/main/Wazuh-ova-imported.png?raw=true)
 
-
-### 2. Access the Wazuh Dashboard  
-> ![Wazuh Dashboard Login](images/wazuh-dashboard-login.png)
-
-### 3. Install and Register Linux Agent (Kali)  
+### 2. Install and Register Linux Agent (Kali)  
 > ![Registering Kali Agent](images/wazuh-agent-kali.png)
+
+### 3. Access the Wazuh Dashboard  
+> ![Wazuh Dashboard Login](images/wazuh-dashboard-login.png)
 
 ### 4. Install and Register Windows Agent  
 > ![Registering Windows Agent](images/wazuh-agent-windows.png)
