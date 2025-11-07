@@ -3,14 +3,14 @@
 
 ---
 
-## 📘 Project Overview
+## Project Overview
 This project showcases the **deployment and configuration of the Wazuh SIEM platform**, designed to collect, analyze, and visualize security events from multiple systems.  
 
 By setting up the **Wazuh Manager**, **Indexer**, **Dashboard**, and **Agents**, I created a small-scale **Security Operations Center (SOC)** environment capable of detecting, alerting, and analyzing endpoint activity in real time.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 - Deploy a full **Wazuh 4.14 SIEM Stack** (Manager, Indexer, Dashboard)  
 - Register **Linux (Kali)** and **Windows** agents for monitoring  
 - Collect and analyze **system logs, authentication logs, and process data**  
@@ -19,7 +19,7 @@ By setting up the **Wazuh Manager**, **Indexer**, **Dashboard**, and **Agents**,
 
 ---
 
-## 🧰 Tools & Technologies
+## Tools & Technologies
 
 | Category | Tools / Components |
 |-----------|--------------------|
@@ -31,7 +31,7 @@ By setting up the **Wazuh Manager**, **Indexer**, **Dashboard**, and **Agents**,
 
 ---
 
-## 🧠 Skills Demonstrated
+## Skills Demonstrated
 
 | Area | Skills Gained |
 |------|----------------|
@@ -43,15 +43,47 @@ By setting up the **Wazuh Manager**, **Indexer**, **Dashboard**, and **Agents**,
 
 ---
 
-## 🧩 Architecture Overview
-*(You can add a simple diagram here — optional but impactful)*  
-Example:  
-> ![Wazuh Architecture Diagram](images/wazuh-architecture.png)
+## Architecture Overview
+        ┌──────────────────────────┐
+        │      Endpoints / VMs     │
+        │ ──────────────────────── │
+        │  • Windows Agent         │
+        │  • Linux Agent (Kali)    │
+        │  • Suricata IDS Logs     │
+        └────────────┬─────────────┘
+                     │
+                     ▼
+        ┌────────────────────────────┐
+        │     Wazuh Manager (OVA)    │
+        │ ───────────────────────────│
+        │ • Receives agent logs      │
+        │ • Applies decoders/rules   │
+        │ • Triggers alerts & events │
+        └────────────┬───────────────┘
+                     │
+                     ▼
+       ┌──────────────────────────────┐
+       │       Wazuh Indexer          │
+       │             │
+       │ ─────────────────────────────│
+       │ • Indexes security events    │
+       │ • Supports queries & alerts  │
+       └─────────── ┬────────────────┘
+                    │
+                    ▼
+       ┌──────────────────────────────┐
+       │        Wazuh Dashboard       │
+       │             │
+       │ ─────────────────────────────│
+       │ • View alerts & dashboards   │
+       │ • GeoIP & AbuseIPDB maps     │
+       │ • Agent & rules management   │
+       └──────────────────────────────┘
+
 
 ---
 
-## 🖥️ Setup & Configuration Steps
-
+## Setup & Configuration Steps
 
 ### 1. Import the Wazuh OVA Appliance  
 > ![Importing Wazuh OVA](https://github.com/OLADOTUN12/wazuh-siem-setup/blob/main/Wazuh-ova-imported.png?raw=true)
@@ -73,17 +105,7 @@ Example:
 
 ---
 
-## 📊 Sample Dashboard Views
-
-| View | Description |
-|------|--------------|
-| ![Agent Summary](images/agent-summary.png) | Shows connected agents and their status |
-| ![Threat Detection](images/threat-detection.png) | Displays detected threats categorized by severity |
-| ![Vulnerability Results](images/vuln-results.png) | Lists CVEs detected on endpoints with severity ratings |
-
----
-
-## 🔍 Key Takeaways
+## Key Takeaways
 - Gained hands-on experience in **SIEM deployment and management**  
 - Learned how to **collect and correlate security logs** from multiple endpoints  
 - Configured **real-time alerting and visualization** for system activity  
@@ -91,12 +113,7 @@ Example:
 
 ---
 
-## 🧾 Future Enhancements
+## Future Enhancements
 - Integrate **Suricata IDS** for network threat detection  
-- Add **GeoIP and AbuseIPDB enrichment** to dashboard alerts  
-- Automate agent deployment with **Ansible or Bash scripts**
-
----
-
-## 📸 Folder Structure
+- Add **GeoIP and AbuseIPDB enrichment** to dashboard alerts
 
