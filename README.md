@@ -57,13 +57,13 @@ Example:
 > ![Importing Wazuh OVA](https://github.com/OLADOTUN12/wazuh-siem-setup/blob/main/Wazuh-ova-imported.png?raw=true)
 
 ### 2. Install and Register Linux Agent (Kali)  
-> ![Registering Kali Agent](https://github.com/OLADOTUN12/wazuh-siem-setup/blob/main/wazuh-agent%20-4.14.0-%20installation-%20kali%20linux.png?raw=true)(https://github.com/OLADOTUN12/wazuh-siem-setup/blob/main/wazuh-agent-%20running.png?raw=true)(https://github.com/OLADOTUN12/wazuh-siem-setup/blob/main/Configure-agent-%20connection-to-talk-manager.png?raw=true)(https://github.com/OLADOTUN12/wazuh-siem-setup/blob/main/Kali-linux-added-successfully-as-agent.png?raw=true)
+> ![Registering Kali Agent](https://github.com/OLADOTUN12/wazuh-siem-setup/blob/main/wazuh-agent%20-4.14.0-%20installation-%20kali%20linux.png?raw=true)![Registering Kali Agent](https://github.com/OLADOTUN12/wazuh-siem-setup/blob/main/wazuh-agent-%20running.png?raw=true)![Registering Kali Agent](https://github.com/OLADOTUN12/wazuh-siem-setup/blob/main/Configure-agent-%20connection-to-talk-manager.png?raw=true)![Registering Kali Agent](https://github.com/OLADOTUN12/wazuh-siem-setup/blob/main/Kali-linux-added-successfully-as-agent.png?raw=true)
 
 ### 3. Install and Register Windows Agent  
 > ![Registering Windows Agent](https://github.com/OLADOTUN12/wazuh-siem-setup/blob/main/Window-wazuh-agent-registration.png?raw=true)
 
 ### 4. Access the Wazuh Dashboard  
-> ![Wazuh Dashboard Login](https://github.com/OLADOTUN12/wazuh-siem-setup/blob/main/Screenshot%202025-11-06%20162818.png?raw=true)(https://github.com/OLADOTUN12/wazuh-siem-setup/blob/main/Dashboard-view-showing-kali-and-window-agent-active.png?raw=true)
+> ![Wazuh Dashboard Login](https://github.com/OLADOTUN12/wazuh-siem-setup/blob/main/Screenshot%202025-11-06%20162818.png?raw=true)![Wazuh Dashboard Login](https://github.com/OLADOTUN12/wazuh-siem-setup/blob/main/Dashboard-view-showing-kali-and-window-agent-active.png?raw=true)
 
 ### 5. View Alerts and Security Events  
 > ![Alerts View](https://github.com/OLADOTUN12/wazuh-siem-setup/blob/main/Alert-%20view.png?raw=true)
