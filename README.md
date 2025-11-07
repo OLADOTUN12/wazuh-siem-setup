@@ -76,7 +76,7 @@ By setting up the **Wazuh Manager**, **Indexer**, **Dashboard**, and **Agents**,
        │             │
        │ ─────────────────────────────│
        │ • View alerts & dashboards   │
-       │ • GeoIP & AbuseIPDB maps     │
+       │    
        │ • Agent & rules management   │
        └──────────────────────────────┘
 
